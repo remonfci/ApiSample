@@ -1,0 +1,32 @@
+{
+    "name": "Epay API test",
+    "description": "Epay API test",
+    "authors": [
+        {
+            "name": "Remon Adel",
+            "email": "r.naeem.fcih@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5",
+        "klein/klein": "^2.1"
+    },
+    "require-dev": {
+	    "zendframework/zend-coding-standard": "^1.0",
+        "phpunit/phpunit": "^6.2"
+    },
+    "autoload": {
+     "psr-4": {
+            "Api\\": "src/"
+        }
+    },
+    "autoload-dev":
+    {
+
+    },
+    "scripts": {
+        "cs-check": "phpcs",
+        "cs-fix": "phpcbf",
+        "test": "phpunit"
+    }
+}
