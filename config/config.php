@@ -2,7 +2,7 @@
 
 return [
     'dbhost' => 'localhost',
-    'dbname' => 'dbname',
+    'dbname' => 'ittalent',
     'dbuser' => 'root',
     'dbpassword' => 'admin'
 ];

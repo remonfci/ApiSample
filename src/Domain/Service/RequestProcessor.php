@@ -43,7 +43,7 @@ class RequestProcessor
      */
     public function process(): Response
     {
-        $transactions = $this->transactionRepository->getRandomTransactions();
+        $transactions = $this->transactionRepository->getRandom();
 
         $transactionsArray = array_map(
             function ($t) {

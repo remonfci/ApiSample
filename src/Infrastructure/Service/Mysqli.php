@@ -22,10 +22,10 @@ class Mysqli implements DatabaseAdapterInterface
      */
     public function connect(array $config)
     {
-        $con = new \mysqli($config['dbhost'], $config['dbuser'], $config['dbpassword'], $config['dbname']);
-
-        if (mysqli_connect_errno()) {
-            echo "Failed to connect to MySQL: " . mysqli_connect_error();
+        try {
+            $con = new \mysqli($config['dbhost'], $config['dbuser'], $config['dbpassword'], $config['dbname']);
+        } catch (\mysqli_sql_exception $exception) {
+            die($exception->getMessage());
         }
 
         $this->connection = $con;
