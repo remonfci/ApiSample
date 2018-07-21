@@ -32,7 +32,8 @@ abstract class AbstractRepository
      * @param array $row
      * @return Transaction
      */
-    protected function createInstance(array $row) {
+    protected function createInstance(array $row)
+    {
         try {
             return $this->map($row, new Transaction($row['id'], $row['latitude'], $row['longitude']));
         } catch (\Exception $e) {
@@ -46,7 +47,8 @@ abstract class AbstractRepository
      * @return Transaction
      * @throws \Exception
      */
-    protected function map($row, Transaction $transaction) {
+    protected function map($row, Transaction $transaction)
+    {
         foreach ($row as $attribute => $value) {
             $method = 'set' . ucfirst($attribute);
 
