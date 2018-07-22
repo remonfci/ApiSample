@@ -8,7 +8,7 @@ use Api\Domain\Entity\Entity;
 use Api\Infrastructure\Service\DatabaseAdapterInterface;
 
 /**
- * Class AbstractRepository
+ * Class Repository
  * @package Api\Domain\Repository
  *
  * @author Remon Adel <r.naeem.fcih@gmail.com>
@@ -21,7 +21,7 @@ abstract class Repository
     protected $database;
 
     /**
-     * AbstractRepository constructor.
+     * Repository constructor.
      * @param DatabaseAdapterInterface $database
      */
     public function __construct(DatabaseAdapterInterface $database)
