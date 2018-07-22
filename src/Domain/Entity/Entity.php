@@ -4,12 +4,12 @@ namespace Api\Domain\Entity;
 
 
 /**
- * Class AbstractEntity
+ * Class Entity
  * @package Api\Domain\Entity
  *
  * @author Remon Adel <r.naeem.fcih@gmail.com>
  */
-abstract class AbstractEntity
+abstract class Entity
 {
 
 }

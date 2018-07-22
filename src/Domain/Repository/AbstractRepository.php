@@ -4,6 +4,7 @@ namespace Api\Domain\Repository;
 
 
 use Api\Domain\Entity\AbstractEntity;
+use Api\Domain\Entity\Entity;
 use Api\Domain\Entity\Transaction;
 use Api\Infrastructure\Service\DatabaseAdapterInterface;
 
@@ -32,12 +33,12 @@ abstract class AbstractRepository
     /**
      * @param string $entity
      * @param array $row
-     * @return Transaction
+     * @return Entity
      */
     protected function createInstance(array $row, $entity)
     {
         try {
-            return $this->map($row, new $entity($row['id'], $row['latitude'], $row['longitude']));
+            return $this->map($row, new $entity());
         } catch (\Exception $e) {
             die($e->getMessage());
         }
@@ -45,11 +46,11 @@ abstract class AbstractRepository
 
     /**
      * @param $row
-     * @param AbstractEntity $entity
-     * @return Transaction
+     * @param Entity $entity
+     * @return Entity
      * @throws \Exception
      */
-    protected function map($row, AbstractEntity $entity)
+    protected function map($row, Entity $entity)
     {
         foreach ($row as $attribute => $value) {
             $method = 'set' . ucfirst($attribute);

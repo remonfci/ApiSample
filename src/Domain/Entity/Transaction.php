@@ -10,7 +10,7 @@ use Api\Domain\Entity\Traits\Identifiable;
  *
  * @author Remon Adel <r.naeem.fcih@gmail.com>
  */
-class Transaction extends AbstractEntity
+class Transaction extends Entity
 {
     use Identifiable;
 
@@ -23,19 +23,6 @@ class Transaction extends AbstractEntity
      * @var
      */
     private $longitude;
-
-    /**
-     * Transaction constructor.
-     * @param int $id
-     * @param string $latitude
-     * @param string $longitude
-     */
-    public function __construct(int $id, string $latitude, string $longitude)
-    {
-        $this->id = $id;
-        $this->latitude = $latitude;
-        $this->longitude = $longitude;
-    }
 
     /**
      * @return mixed
