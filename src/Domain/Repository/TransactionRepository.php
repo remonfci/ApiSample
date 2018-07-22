@@ -10,7 +10,7 @@ use Api\Domain\Entity\Transaction;
  *
  * @author Remon Adel <r.naeem.fcih@gmail.com>
  */
-class TransactionRepository extends AbstractRepository implements RandomEntityInterface
+class TransactionRepository extends Repository implements RandomEntityInterface
 {
     /**
      * @return array

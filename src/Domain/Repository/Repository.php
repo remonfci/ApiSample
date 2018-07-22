@@ -5,7 +5,6 @@ namespace Api\Domain\Repository;
 
 use Api\Domain\Entity\AbstractEntity;
 use Api\Domain\Entity\Entity;
-use Api\Domain\Entity\Transaction;
 use Api\Infrastructure\Service\DatabaseAdapterInterface;
 
 /**
@@ -14,7 +13,7 @@ use Api\Infrastructure\Service\DatabaseAdapterInterface;
  *
  * @author Remon Adel <r.naeem.fcih@gmail.com>
  */
-abstract class AbstractRepository
+abstract class Repository
 {
     /**
      * @var DatabaseAdapterInterface
