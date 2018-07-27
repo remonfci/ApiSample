@@ -2,7 +2,6 @@
 
 namespace Api\Domain\Entity\Traits;
 
-
 /**
  * Trait Identifiable
  * @package Api\Domain\Entity\Traits

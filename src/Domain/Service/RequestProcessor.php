@@ -2,7 +2,6 @@
 
 namespace Api\Domain\Service;
 
-
 use Api\Domain\Repository\TransactionRepository;
 use Klein\Response;
 

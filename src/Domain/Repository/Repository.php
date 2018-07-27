@@ -2,7 +2,6 @@
 
 namespace Api\Domain\Repository;
 
-
 use Api\Domain\Entity\Entity;
 use Api\Infrastructure\Service\DatabaseAdapterInterface;
 

@@ -1,8 +1,8 @@
 <?php
 
 namespace Api\Domain\Repository;
-use Api\Domain\Entity\Transaction;
 
+use Api\Domain\Entity\Transaction;
 
 /**
  * Class TransactionRepository

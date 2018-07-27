@@ -2,7 +2,6 @@
 
 namespace Api\Infrastructure\Service;
 
-
 /**
  * Interface DatabaseAdapterInterface
  * @package Api\Infrastructure\Service

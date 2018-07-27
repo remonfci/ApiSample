@@ -1,8 +1,8 @@
 <?php
 
 namespace Api\Domain\Entity;
-use Api\Domain\Entity\Traits\Identifiable;
 
+use Api\Domain\Entity\Traits\Identifiable;
 
 /**
  * Class TransactionEntity

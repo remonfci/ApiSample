@@ -2,7 +2,6 @@
 
 namespace Api\Domain\Repository;
 
-
 /**
  * Interface RepositoryInterface
  * @package Api\Domain\Repository

@@ -2,7 +2,6 @@
 
 namespace Api\Infrastructure\Service;
 
-
 /**
  * Class Mysqli
  * @package Api\Infrastructure\Service
@@ -38,7 +37,7 @@ class Mysqli implements DatabaseAdapterInterface
     public function query(string $query): array
     {
         $result = $this->connection->query($query);
-        $rows = mysqli_fetch_all($result,MYSQLI_ASSOC);
+        $rows = mysqli_fetch_all($result, MYSQLI_ASSOC);
         return $rows;
     }
 }

@@ -7,7 +7,6 @@ use Api\Domain\Repository\TransactionRepository;
 use Api\Infrastructure\Service\Mysqli;
 use Api\Domain\Service\RequestProcessor;
 
-
 /**
  * Class Bootstrap
  * This class is used for initializing the api
